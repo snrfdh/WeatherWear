@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuaca</title>
+    <link rel="stylesheet" href="../css/cuaca.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <!-- judul web dan judul kota yang dinamis sesuai kota yang kita input -->
+        <div id="judul">
+            <div id="logo"><img src="../assets/images.png"></div>
+            <h1 id="jdl-projek">WeatherWear</h1>
+        </div>
+        <div id="kota">
+            <h2 id="judul-kota">Memuat cuaca...</h2>
+            <div id="navbar">
+                <a href="../index.html">Cek cuaca di lokasi lain</a>
+                <a href="about.html">About</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- untuk menampilkan hasil render dari JavaScript seperti cuaca, jam, outfit, dan prediksi harian -->
+    <main>
+        <div id="info-cuaca"></div>
+        <div id="prediksi-container"></div>
+    </main>
+    <footer>
+        <p>created by Siti Nurfadhilah</p>
+        <p>weather data provided by <a href="https://open-meteo.com" target="_blank">Open-Meteo</a></p>
+    </footer>
+    <script src="../js/cuaca.js"></script>
+</body>
+</html>

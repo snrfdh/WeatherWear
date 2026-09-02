@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>masukan</title>
+    <link rel="stylesheet" href="../css/masukan.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+
+</head>
+<body>
+    <!-- header sticky -->
+    <header id="header">
+        <div id="logo">
+            <div id="logo"><img src="../assets/images.png"></div>
+            <h1>WeatherWear</h1>
+        </div>
+        <div id="judul">
+            <h1 id="jdl">Kirim Masukan</h1>
+            <div id="navbar">
+                <a href="../index.html">Cek Cuaca</a>
+                <a href="about.html">About</a>
+                <a href="masukan.html" class="aktif">Kirim Masukan</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- main: layoutnya grid, berisi form di kiri & kartu FAQ di kanan -->
+    <main>
+        <div id="wrapper-masukan">
+            <section id="kolom-form">
+                <section id="intro-masukan">
+                    <p>Ada saran fitur, menemukan bug, atau ingin memberi kritik soal WeatherWear?</p>
+                </section>
+                <form id="form-masukan">
+                    <div class="kelompok-input">
+                        <label for="nama">Nama</label>
+                        <input type="text" id="nama" placeholder="Nama Anda" required>
+                    </div>
+                    <div class="kelompok-input">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="nama@email.com">
+                    </div>
+                    <div class="kelompok-input">
+                        <label for="jenis">Jenis Masukan</label>
+                        <select id="jenis" name="jenis" required>
+                            <option value="" disable selected>Pilih salah satu</option>
+                            <option value="saran-fitur">Saran fitur baru</option>
+                            <option value="bug">Laporan bug</option>
+                            <option value="kritik">Kritik & saran umum</option>
+                            <option value="lainnya">Lainnya</option>
+                        </select>
+                    </div>
+                    <div class="kelompok-input">
+                        <label for="pesan">Pesan</label>
+                        <textarea id="pesan" name="pesan" rows="5" placeholder="Tulis masukan anda di sini..." required></textarea>
+                    </div>
+                    <button type="submit" id="kirim-masukan">
+                        <span class="material-symbols-outlined">send</span>
+                        Kirim Masukan
+                    </button>
+                </form>
+            </section>
+            
+            <aside id="kolom-faq">
+                <h2 id="judul-faq">Pertanyaan yang Sering Ditanya</h2>
+                <div class="kartu-faq">
+                    <div class="pertanyaan-faq">
+                        <span class="material-symbols-outlined">lightbulb</span>
+                        <p>Bagaimana cara WeatherWear menentukan rekomendasi pakaian?</p>
+                    </div>
+                    <p class="jawaban-faq">WeatherWear menganalisis data cuaca real-time seperti suhu, kelembapan,kecepatan angin, dan kemungkinan hujan di lokasi Anda untuk menyarankan pakaian yang paling nyaman dan sesuai.</p>
+                </div>
+                <div class="kartu-faq">
+                    <div class="pertanyaan-faq">
+                        <span class="material-symbols-outlined">forward_to_inbox</span>
+                        <p>Masukan saya dikirim kemana?</p>
+                    </div>
+                    <p class="jawaban-faq">Langsung ke email pengembang WeatherWear, terformat rapi sesuai yang kamu isi di form.</p>
+                </div>
+                <div class="kartu-faq">
+                    <div class="pertanyaan-faq">
+                        <span class="material-symbols-outlined">bug_report</span>
+                        <p>Nemu bug harus diisi apa?</p>
+                    </div>
+                    <p class="jawaban-faq">Pilih jenis "Laporan bug", terus jelasin di kolom pesan.</p>
+                </div>
+            </aside>
+        </div>
+    </main>
+    <footer>
+        <p>created by Siti Nurfadhilah</p>
+        <p>weather data provided by <a href="https://open-meteo.com" target="_blank">Open-Meteo</a></p>
+    </footer>
+    <script src="../js/masukan.js"></script>
+</body>
+</html>
