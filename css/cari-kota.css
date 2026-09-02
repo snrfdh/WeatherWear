@@ -127,7 +127,7 @@ footer a{
 }
 
 
-@media (max-width: 320px){
+@media (max-width: 600px){
     main form{
         flex-direction: column;
         border-radius: 20px;
