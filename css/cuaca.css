@@ -1,0 +1,264 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Inter', sans-serif;
+    color: #152a43;
+    background: linear-gradient(180deg, #eaf6ff 0%, #ffffff 50%, #dcf0ff 100%);
+    padding: 5vh 5vw;
+}
+
+/* -- HEADER JUDUL NAVBAR --*/
+#judul{
+    display: flex;
+}
+#logo img{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+}
+#kota{
+    margin-top: 20px;
+    margin-bottom: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+#navbar a{
+    background:#dcf0ff;
+    padding: 10px;
+    border-radius: 50px;
+    text-decoration: none;
+}
+#navbar a:hover{
+    border: 3px solid #152a43;
+    box-shadow: 10px 7px 6px;
+}
+
+/* -- KARTU CUACA HARI INI -- */
+#suhu-saat-ini{
+    background: #dcf0ff;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    transition: 1s ease;
+}
+
+#suhu-saat-ini:hover{
+    border: 3px solid #152a43;
+    box-shadow: 7px 5px 3px;
+}
+
+#suhu-saat-ini .material-symbols-outlined{
+    font-size: 90px;
+    color: #2b6cb0;
+}
+
+/* -- KARTU DETAIL KELEMBAPAN - ANGIN - CURAH HUJAN -- */
+#detail-cuaca{
+    display: flex;
+    gap: 12px;
+}
+
+.kartu-detail{
+    margin-top: 20px;
+    background: #e2f4ff;
+    border-radius: 12px;
+    padding: 12px 14px;
+    flex: 1;
+    text-align: center;
+}
+
+.label-detail{
+    font-size: 12px;
+    color: #6b7c93;
+    margin-bottom: 4px;
+    text-transform: uppercase;
+}
+
+.nilai-detail{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+
+/* -- PREDIKSI PER JAM -- */
+#judul-per-jam{
+    margin-top: 30px;
+    margin-bottom: 12px;
+    color: #152a43;
+}
+
+#daftar-jam{
+    list-style: none;
+    display: flex;
+    gap: 12px;
+    overflow-x: auto;
+}
+
+.kartu-jam{
+    flex: 0 0 auto;
+    background: #e2f4ff;
+    border-radius: 16px;
+    padding: 14px 12px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+}
+
+.kartu-jam .material-symbols-outlined{
+    font-size: 24px;
+    color: #2b6cb0;
+}
+
+.jam-per-jam{
+    font-size: 12px;
+    font-weight: 600;
+    color: #152a43;
+}
+
+.suhu-per-jam{
+    font-size: 12px;
+    color: #6b7c93;
+}
+
+.kartu-jam:hover{
+    box-shadow: 10px 7px 6px;
+    border: 3px solid #152a43;
+}
+
+.kartu-jam.aktif{
+    background: #152a43;
+}
+
+.kartu-jam.aktif .jam-per-jam,
+.kartu-jam.aktif .suhu-per-jam,
+.kartu-jam.aktif .material-symbols-outlined{
+    color: white;
+}
+
+
+/* -- REKOMENDASI OUTFIT -- */
+#rekomendasi-outfit{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.baris-outfit{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    background: #dcf0ff;
+    border-radius: 16px;
+}
+
+.gambar-outfit{
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    padding: 8px;
+}
+
+#teks-outfit{
+    font-size: 14px;
+    color: #152a43;
+    padding-right: 14px;
+    
+}
+
+#wadah-aksesoris{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.kartu-aksesoris{
+    display: flex;
+    gap: 14px;
+    background: #dcf0ff;
+    border-radius: 16px;
+    padding: 20px;
+}
+.kartu-aksesoris img{
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    border-radius: 12px;
+    padding: 6px;
+}
+.kartu-aksesoris p{
+    font-size: 13px;
+    color: #152a43;
+    text-align: left;
+    padding-left: 14px;
+}
+
+#prediksi-container{
+    margin-top: 24px;
+}
+ 
+/* -- PREDIKSI CUACA HARIAN -- */
+.kartu-hari{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 32px 1fr auto;
+    align-items: center;
+    gap: 12px;
+    background: #f4faff;
+    border: 1px solid #e2f4ff;
+    border-radius: 14px;
+    padding: 10px 14px;
+}
+        
+.kartu-hari .material-symbols-outlined{
+        font-size: 32px;
+        color: #2b6cb0;
+}
+
+/* -- FOOTER -- */
+footer{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 13px;
+}
+footer a{
+    text-decoration: none;
+    font-size: 13px;
+}
+/* -- RESPONSIF -- */
+@media(max-width: 600px){
+    #kota{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    #judul-kota{
+        width: 100%;
+    }
+    #navbar{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 8px;
+    }
+    #navbar a{
+        font-size: 13px;
+        padding: 8px 14px;
+    }
+}

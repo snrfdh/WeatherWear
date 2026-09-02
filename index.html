@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cari Kota</title>
+    <link rel="stylesheet" href="css/cari-kota.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <!--Header Logo-->
+        <div>
+            <span id="logo"><img src="assets/images.png"></span>
+            <h1 id="judul-projek">WeatherWear</h1>
+        </div>
+        <p id="teks">Sebelum melangkah keluar rumah atau memesan tiket perjalanan, pastikan kamu sudah tahu kondisi cuaca di tempat tujuan. Cari lokasi yang akan kamu kunjungi di bawah ini untuk mendapatkan panduan berpakaian yang paling pas dari WeatherWear</p>
+    </header>
+    <main>
+        <!--Cari Kota-->
+        <form>
+            <input type = "text" id="input-kota" placeholder="Input lokasi...">
+            <button id="cari" type="button">cari</button>
+        </form>
+        <div id="hasil"></div>
+    </main>
+    <footer>
+        <p>created by Siti Nurfadhilah</p>
+        <p>weather data provided by <a href="https://open-meteo.com" target="_blank">Open-Meteo</a></p>
+    </footer>
+
+    <script src="js/cari-kota.js"></script>
+</body>
+</html>
