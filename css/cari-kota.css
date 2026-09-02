@@ -57,7 +57,7 @@ main form{
     border: none;
     cursor: pointer;
     font-family: 'Inter', sans-serif;
-    padding: 8px 45px;
+    padding: 6px 35px;
     border-radius: 50px;
     flex: 1;
 }
