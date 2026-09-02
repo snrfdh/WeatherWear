@@ -57,7 +57,7 @@ main form{
     border: none;
     cursor: pointer;
     font-family: 'Inter', sans-serif;
-    padding: 8px 50px;
+    padding: 8px 45px;
     border-radius: 50px;
     flex: 1;
 }
@@ -70,7 +70,7 @@ main form{
     font-size: 15px;
     color: #ffffff;
     background-color: #1c7ed6;
-    padding: 12px 20px;
+    padding: 10px 15px;
     border-radius: 50px;
 }
 
